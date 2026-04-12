@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes: Team Brainstorm</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <h2>Project: Productivity Suite</h2>
+        <h3>Date: April 12, 2026</h3>
+        <nav>
+            <a href="#attendance">Attendance</a> | 
+            <a href="#agenda">Agenda</a> | 
+            <a href="#media">Media</a> | 
+            <a href="#feedback">Feedback</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="attendance">
+            <h2>Attendance List</h2>
+            <ul>
+                <li><strong>Tian</strong> - Project Manager</li>
+                <li><em>Lin</em> - Lead Developer</li>
+                <li>Zhao - UI/UX Designer</li>
+            </ul>
+        </section>
+
+        <section id="agenda">
+            <h2>Meeting Agenda</h2>
+            <ol>
+                <li>Review last week's <b>unfinished business</b>.</li>
+                <li>Brainstorm core features for the timer.</li>
+                <li>Discuss technical architecture.</li>
+            </ol>
+        </section>
+
+        <section id="notes">
+            <h2>Discussion Points</h2>
+            <details>
+                <summary>Unfinished Business</summary>
+                <p>We still need to finalize the server hosting provider. This was pushed from the March meeting.</p>
+            </details>
+
+            <h3>New Business</h3>
+            <p>The team agreed to focus on a <strong>minimalist interface</strong>. We want to avoid feature creep in the first version.</p>
+            
+            <blockquote>
+                "Simplicity is the ultimate sophistication." - Discussion takeaway.
+            </blockquote>
+        </section>
+
+        <section id="media">
+            <h2>Media & Recordings</h2>
+            <h3>Whiteboard Architecture</h3>
+            <img src="l1.png" alt="Architecture diagram showing the relationship between the timer and the notification system" width="500">
+
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="a1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Recording</h3>
+            <video controls width="500">
+                <source src="v1.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <section id="feedback">
+            <h2>Contact & Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Meeting Evaluation</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label>How productive was this meeting?</label><br>
+                    <input type="radio" id="high" name="prod" value="high">
+                    <label for="high">High</label>
+                    <input type="radio" id="low" name="prod" value="low">
+                    <label for="low">Low</label><br><br>
+
+                    <label for="date">Follow-up Date:</label>
+                    <input type="date" id="date" name="date"><br><br>
+
+                    <label for="role">Your Role:</label>
+                    <select id="role" name="role">
+                        <option value="dev">Developer</option>
+                        <option value="design">Designer</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <button type="button">Submit (Non-functional)</button>
+                </fieldset>
+            </form>
+        </section>
+        <p><i>Minutes recorded by the Gemini Assistant</i></p>
+    </footer>
+
+</body>
+</html>
