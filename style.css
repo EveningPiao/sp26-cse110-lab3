@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #2a9d8f;
+  --secondary-bg: #f4f1de;
+  --main-font: 'Inter', sans-serif; 
+}
+
+/* Base Styles */
+body {
+  font-family: var(--main-font, Arial); 
+  background-color: var(--secondary-bg);
+  margin: 0.5in; 
+  font-size: 12pt;
+  line-height: 1.5pc;
+  /* Color */
+  color: black;
+}
+
+/* COLORS & GAMUT */
+header h1 {
+  color: #264653;
+  background-color: rgba(42, 157, 143, 0.1);
+  border-bottom: 3px solid hsla(160, 100%, 75%, 1);
+}
+
+h2 {
+  /* color & Color-mix */
+  color: color(display-p3 0.12 0.45 0.81);
+  border-left: 5px solid color-mix(in srgb, var(--primary-color), white 40%);
+}
+
+/* BOX MODEL (Longhand vs Shorthand) */
+section {
+  background-color: white;
+  /* Margin Longhand */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: 20px auto 20px auto; 
+  
+  /* Padding Longhand */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 15px 25px 15px 25px;
+
+  /* Borders */
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 8px;
+  
+  /* Sizing */
+  max-width: 900px;
+  min-width: 300px;
+}
+
+/* TEXT & DISPLAY */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  /* Display: inline-block */
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+/* Pseudo-classes */
+nav a:hover {
+  color: var(--primary-color);
+}
+
+nav a:active {
+  transform: scale(0.95);
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+  /* Display: block */
+  display: block;
+}
+
+/* POSITIONING */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 100;
+  padding: 10px;
+  border-bottom: 2px solid #2a9d8f;
+}
+
+footer {
+  position: relative; 
+  margin-top: 50px;
+}
+
+/* LAYOUTS */
+#attendance ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* Flex attributes */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+fieldset {
+  display: grid;
+  /* Grid attributes */
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  align-items: center;
+}
+
+/* UNITS (Relative) */
+#media img {
+  /* Relative Units: %, em, rem */
+  width: 100%; 
+  height: auto;
+  margin-bottom: 2em;
+  padding: 1rem;
+}
+
+/* RESPONSIVENESS (Media Query) */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10px;
+  }
+  
+  #attendance ul {
+    flex-direction: column;
+  }
+  
+  fieldset {
+    grid-template-columns: 1fr;
+  }
+}
